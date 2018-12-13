@@ -3,7 +3,7 @@ import sys
 class RetroBasic():
     id = set([chr(e) for e in range(ord('A'), ord('Z')+1)])
     line_num = set([str(i) for i in range(1,1001)])
-    const = set([str(i) for i in range(1,101)])
+    const = set([str(i) for i in range(0,101)])
     terminal = set(["+", "-", "IF", "<", "=", "PRINT", "GOTO", "STOP", "EOF"])
     parse_table = {
         "pgm" : {
